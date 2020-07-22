@@ -344,7 +344,7 @@ def train_model(args, x_train, y_train, x_test, y_test, hyperparameters, log_dir
 				  optimizer=sgd,
 				  metrics=['categorical_accuracy'])
 
-	plot_model(model, to_file='model.png')
+	plot_model(model, to_file='../notebook/result/model.png')
 
 	model.fit(x_train, y_train,
 			  batch_size=hyperparameters['batch_size'],
